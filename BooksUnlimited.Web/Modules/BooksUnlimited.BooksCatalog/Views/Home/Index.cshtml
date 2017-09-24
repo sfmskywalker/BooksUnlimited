@@ -1,0 +1,18 @@
+﻿<h1>Books Catalog</h1>
+<ul>
+    @foreach (var book in ViewBag.Books)
+    {
+        <li>
+            <article>
+                <header>
+                    <h3>@book.Title</h3>
+                    <span>By: @book.Author</span><br />
+                    <span>Genre: @book.Genre</span>
+                </header>
+            </article>
+            <summary>
+                @book.Summary
+            </summary>
+        </li>
+    }
+</ul>

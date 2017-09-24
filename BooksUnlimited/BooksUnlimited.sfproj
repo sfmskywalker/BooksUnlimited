@@ -32,6 +32,7 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BooksUnlimited.Services.BooksCatalog\BooksUnlimited.Services.BooksCatalog.csproj" />
     <ProjectReference Include="..\BooksUnlimited.Web\BooksUnlimited.Web.csproj" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />

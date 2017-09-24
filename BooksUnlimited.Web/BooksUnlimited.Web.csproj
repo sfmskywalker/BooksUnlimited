@@ -7,15 +7,28 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Modules\**" />
+    <Content Remove="Modules\**" />
+    <EmbeddedResource Remove="Modules\**" />
+    <None Remove="Modules\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore" Version="2.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="2.0.0" />
     <PackageReference Include="Microsoft.ServiceFabric" Version="5.7.198" />
     <PackageReference Include="Microsoft.ServiceFabric.AspNetCore.Kestrel" Version="2.7.198" />
     <PackageReference Include="Microsoft.ServiceFabric.Data" Version="2.7.198" />
     <PackageReference Include="Microsoft.ServiceFabric.Services" Version="2.7.198" />
+    <PackageReference Include="OrchardCore.Cms" Version="1.0.0-beta1-3219" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="Modules\BooksUnlimited.BooksCatalog\BooksUnlimited.BooksCatalog.csproj" />
   </ItemGroup>
 
 </Project>

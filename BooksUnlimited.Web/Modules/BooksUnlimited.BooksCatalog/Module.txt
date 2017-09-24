@@ -1,0 +1,6 @@
+﻿Name: Books Unlimited - Books Catalog
+Description: The Books Unlimited Books Catalog module turns your site into a full-blown books catalog.
+Features:
+    BooksUnlimited.BooksCatalog:
+        Category: Books
+        Description: Enables access to the BooksCatalog microservice hosted by Service Fabric.
