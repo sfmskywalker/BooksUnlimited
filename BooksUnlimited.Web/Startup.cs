@@ -21,7 +21,6 @@ namespace BooksUnlimited.Web
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddExtensionLocation("Modules");
             services.AddOrchardCms();
         }
 
